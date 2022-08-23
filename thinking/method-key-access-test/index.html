@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Access Example</title>
+</head>
+
+<body>
+    <fieldset class="Method" tabindex="0">
+        <legend>Method: My method</legend>
+        <label>
+            <span>Name</span>
+            <input type="text" value="My method" tabindex="-1" />
+        </label>
+        <label>
+            <span>Active</span>
+            <input type="checkbox" checked="" tabindex="-1" />
+        </label>
+
+        <fieldset tabindex="-1">
+            <legend>
+                Timers
+                <button class="addChildButton" title="Add a timer" tabindex="-1">+</button>
+            </legend>
+
+            <ul>
+                <li>
+                    <label hiddenlabel="">
+                        <span>Name</span>
+                        <input type="text" tabindex="-1" />
+                    </label>
+                    <label hiddenlabel="">
+                        <span>Interval</span>
+                        <input type="number" step="any" tabindex="-1" />
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset tabindex="-1">
+            <legend>
+                Handlers
+                <button class="addChildButton" title="Add a key handler" tabindex="-1">+Key</button>
+                <button class="addChildButton" title="Add a pointer handler" tabindex="-1">
+                    +Pointer
+                </button>
+                <button class="addChildButton" title="Add a timer handler" tabindex="-1">+Timer</button>
+            </legend>
+            <ol>
+                <li>
+                    <fieldset class="Handler" tabindex="-1">
+                        <legend>Key Handler</legend>
+
+                        <label>
+                            <span>Signal</span>
+                            <select required="" tabindex="-1">
+                                <option value="" disabled="">Choose one...</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Debounce</span>
+                            <input type="number" step="any" tabindex="-1" />
+                        </label>
+
+                        <fieldset class="Keys" tabindex="-1">
+                            <legend>
+                                Keys
+                                <button class="addChildButton" title="Add a key" tabindex="-1">+</button>
+                            </legend>
+                            <ul>
+                                <li>
+                                    <div class="Key">
+                                        <label hiddenlabel="">
+                                            <span>Key</span>
+                                            <select required="" tabindex="-1">
+                                                <option value="" disabled="">Choose one...</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="Conditions" tabindex="-1">
+                            <legend>
+                                Conditions
+                                <button class="addChildButton" title="Add a condition" tabindex="-1">+</button>
+                            </legend>
+                            <ul></ul>
+                        </fieldset>
+                        <fieldset class="Responses" tabindex="-1">
+                            <legend>
+                                Responses
+                                <button class="addChildButton" title="Add a response" tabindex="-1">+</button>
+                            </legend>
+                            <ul>
+                                <li>
+                                    <div class="Response">
+                                        <label hiddenlabel="">
+                                            <span>Response</span>
+                                            <select required="" tabindex="-1">
+                                                <option value="" disabled="">Choose one...</option>
+                                                <option value="Responder">none</option>
+                                            </select></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </fieldset>
+                </li>
+            </ol>
+        </fieldset>
+    </fieldset>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
