@@ -1,6 +1,7 @@
 import { html } from "uhtml";
 import { Base, componentMap } from "./base";
 import css from "ustyler";
+import Globals from "../globals";
 
 export class ModalDialog extends Base {
   static defaultProps = {
