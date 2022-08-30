@@ -60,11 +60,13 @@ So the tab order could be:
 | Save selected input | Save selected cell | Enter? |
 | Cancel changes to input | Cancel changes to cell | Esc? |
 
-### Two ways of thinking of the editor 'tree'
+### Two ways of thinking of the IDE 'tree'
 1) The literal layout tree describing the AAC interface
+  - It might be ideal to keep all nodes permanently expanded so navigation only affects movement within tree, rather than expanding/contracting the tree
+  - An alternate shortcut could be used for expanding contracting nodes within the tree (although this may deviate from guidelines)
 2) The whole IDE
   - May or may not include tabs at the top as the initial children nodes
-  - The layout tree is a subtree in the IDE
+  - The layout tree is a subtree in the IDE (possibly as a child of the layout tab)
   - The html inputs are children of a layout node, and can themselves be trees (arranged hierarchically)
   - Editable html inputs are analogous to editable cells in Excel and serve as the leaf nodes
 
