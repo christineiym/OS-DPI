@@ -32,3 +32,43 @@ So the tab order could be:
 
     - Arrows to move
     - Tab to return to Tree
+
+## An alternative model for keyboard access in the editor
+### Models for accessibility in trees with HTML inputs:
+- (Primary) The Excel 365 online editor
+  - All keyboard shortcuts in the [Excel 365 online editor](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f#bkmk_ribbonwin)
+  - Good overall shortcut access:
+    - Search field to access all controls by fuzzy matching (Alt-Q)
+    - Menus (and options within menus) (Alt + select from what shows up)
+- https://github.com/codeofdusk/treemendous
+  - Possible shortcuts:
+    - Alt + a to add node
+    - F2 or select "edit node" from context menu
+  - Drawback: examples do not work
+- Fancy Tree
+  - See [relevant discussion](https://github.com/mar10/fancytree/issues/709)
+
+### Analogous features with Excel 365 online editor
+| IDE | Excel | Shortcut |
+| ---- | ----- | ------- |
+| Change IDE tab | Change Sheet | Ctrl + Page down / Option + Right arrow key |
+| Access toolbar | Access menus | Alt-Q/etc. |
+| Enter tree node | Go forward column | Right arrow key |
+| Exit tree node | Go back one column | Left arrow key |
+| Move through children | Move through cells | Up/down arrow keys |
+| Edit the selected input | Edit the selected cell | F2 |
+| Save selected input | Save selected cell | Enter? |
+| Cancel changes to input | Cancel changes to cell | Esc? |
+
+### Toolbar notes
+Position:
+- Under tab list
+- Tab to get to/navigate from? 
+- Save position in tree when accessing toolbar
+Functionality:
+- Add
+- Edit
+
+## Tab access (standards)
+- [From w3.org](https://www.w3.org/WAI/ARIA/apg/example-index/tabs/tabs-manual.html)
+- [From Mozilla web docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role)
