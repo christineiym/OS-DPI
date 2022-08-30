@@ -48,7 +48,7 @@ export class Group {
   }
 
   /**
-   * Find the index of the member in a bredth-first search
+   * Find the index of the member in a breadth-first search
    *
    * @param {Target} target
    */
